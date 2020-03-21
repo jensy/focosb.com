@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support our small businesses in Fort Collins</title>
+
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<!-- add submit button -->
+
+<body class="font-sans bg-gray-100">
+  <div class="flex justify-center bg-gray-50 p-4 lg:p-12">
+    <div class="w-full">
+      <div class="mb-4 lg:mb-12 lg:flex lg:items-center justify-between">
+        <h1 class="text-xl lg:text-4xl leading-9 font-extrabold text-gray-900">
+          Support our small businesses in Fort Collins
+        </h1>
+        <a class="inline-block gift-card p-2 px-4 bg-indigo-600 rounded-md text-white text-sm hover:text-white hover:bg-indigo-700 focus:outline-none"
+          href="https://forms.gle/adGLTwEgFqERQR526">Add Business</a>
+      </div>
+
+
+      <ul id="target" class="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
+
+        Loading...
+
+        <script id="template" type="x-tmpl-mustache">
+
+          {{#entry}}
+          <li class="p-6 text-base text-gray-600 bg-white shadow overflow-hidden sm:rounded-lg" ;>
+            <div class="flex justify-between">
+              <h2 class="text-xl font-extrabold text-gray-900">{{gsx$name.$t}}</h2>
+              
+              {{#gsx$website.$t}}
+              <a href="{{gsx$website.$t}}"><svg class="h-6 w-6 mt-1" fill="none" viewBox="0 0 24 24" stroke="#38b2ac">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </a>
+              {{/gsx$website.$t}}
+
+            </div>
+
+            <ul class="categories">
+              <li class="px-2 mb-8 inline-flex text-xs leading-5 rounded-full bg-orange-300 text-gray-800">
+                {{gsx$category.$t}}
+              </li>
+              {{#gsx$homedeliveryavailable.$t}}
+              <li class="px-2 mb-8 inline-flex text-xs leading-5 rounded-full bg-red-300 text-gray-800">
+                Home delivery
+              </li>
+              {{/gsx$homedeliveryavailable.$t}}
+            </ul>
+            {{#gsx$buygiftcard.$t}}
+            <div class="mb-6">
+              <a class="gift-card p-2 px-4 bg-teal-500 rounded-md text-white text-sm hover:text-white hover:bg-teal-600 focus:outline-none"
+                  href="{{gsx$buygiftcard.$t}}">Support with Gift Card</a>
+            </div>
+            {{/gsx$buygiftcard.$t}}
+
+            {{#gsx$alternativewaytosupport.$t}}
+            <div>
+              <h3 class="text-md font-extrabold text-gray-900">Support</h3>
+              <p class="alternative text-sm leading-5 text-gray-600">{{gsx$alternativewaytosupport.$t}}</p>
+            </div>
+            {{/gsx$alternativewaytosupport.$t}}
+
+            {{#gsx$notes.$t}}
+            <div>
+              <h3 class="text-md font-extrabold text-gray-900">Notes</h3>
+              <p class="alternative text-sm leading-5 text-gray-600">{{gsx$notes.$t}}</p>
+            </div>
+            {{/gsx$notes.$t}}
+          </li>
+          {{/entry}}
+          </script>
+      </ul>
+
+      <footer class="mt-8 flex justify-center text-sm leading-5 text-gray-600">
+        Made with ❤in Fort Collins
+      </footer>
+    </div>
+
+
+  </div>
+
+
+  <script src="https://unpkg.com/mustache@latest"></script>
+  <script src=" ./src/index.js"></script>
+</body>
+
+</html>
