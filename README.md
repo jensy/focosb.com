@@ -4,4 +4,6 @@ Small businesses in town need our support. The website's goal is to make them mo
 
 ## How to contribute
 - Visit https://focosb.com and add businesses using the Google form
-- Look at the GitHub issues to help optimize and enhacne the website
+- Look at the GitHub issues to help optimize and enhance the website
+
+## Thank you
