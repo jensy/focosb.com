@@ -29,6 +29,31 @@
         <a class="inline-block gift-card p-2 px-4 bg-indigo-600 rounded-md text-white text-sm font-semibold hover:text-white hover:bg-indigo-700 focus:outline-none focus:bg-indigo-500"
           href="https://forms.gle/adGLTwEgFqERQR526" tabindex="0">Add Business</a>
       </div>
+
+      <div class="max-w-md mb-12">
+        <form name="contact" method="POST" data-netlify="true">
+          <div class="mb-2">
+            <input type="text" name="name" aria-label="Your name"
+              class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 sm:text-sm sm:leading-5"
+              placeholder="Your name" />
+          </div>
+          <div class="mb-2">
+            <input type="email" name="email" aria-label="Your email"
+              class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 sm:text-sm sm:leading-5"
+              placeholder="Email address" />
+          </div>
+          <div class="mb-2">
+            <textarea name="message" aria-label="Your feedback"
+              class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 sm:text-sm sm:leading-5"
+              placeholder="Your feedback"></textarea>
+          </div>
+          <div>
+            <button type="submit" aria-label="Send feedback"
+              class="inline-block gift-card p-2 px-4 bg-indigo-600 rounded-md text-white text-sm font-semibold hover:text-white hover:bg-indigo-700 focus:outline-none focus:bg-indigo-500">Send
+              feedback</button>
+          </div>
+        </form>
+      </div>
       <ul id="target" class="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
 
         Loading...
