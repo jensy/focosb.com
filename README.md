@@ -1,6 +1,8 @@
 # Support our small businesses in Fort Collins
 
-Small businesses in town need our support. The website's goal is to make them more visible. This is very much work in progress and contributions are very welcome.
+Many of our favorite Fort Collins businesses are closed for now, or have had to limit their interaction with customers. While business is not as usual right now, we can still support our community by shopping online 🚚 or buying gift cards to spend later – all from a healthy distance.
+
+Please use this list to find social-distancing-friendly purchasing options at your favorite shops, restaurants, cafés, and more. Let's do what we can to keep our local economy up and running!
 
 ## How to contribute
 - Visit https://focosb.com and add businesses using the Google form
